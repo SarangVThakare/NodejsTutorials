@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <style>
+        .heading{
+            font-size:25px;
+            text-align:center;
+            font-weight: bold;
+        }
+        table{
+            font-size:15px;
+            font-weight:bold;
+            padding:2px;
+            border-radius:2px;
+            }
+        input,input:focus{
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            }
+        .btn{
+            margin:10px;
+            background-color:blue;
+            color: white;
+            text-align: center;
+            box-shadow: 2px 2px 4px;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 10px;
+            }
+    </style>
+</head>
+<body>
+    <p class="heading">Register New Students</p>
+    <br/>
+    <form action="/admin/register" method="post">
+        <table>
+            <tr><td><label>Name of the Student: </td></label>
+            <td><input type="text" name="name"/><br/></td></tr>
+            <tr><td><label>Roll Number of the Student: </td></label>
+            <td><input type="text" name="rollno"/><br/></td></tr>
+            <tr><td><label>Password of the Student: </td></label>
+            <td><input type="password" name="pass"/></td></tr>
+        </table></br></br>
+
+    <p class="heading">Upload Marks of Students: </h2>
+        </td></tr><tr><td><label>Semester: </td></label><td>
+        <datalist name="semester"><option value="autumn"><option value="spring"></datalist>
+        <div id="autumn">
+            <table class="table">
+            <tr><td><label>Computer Programming: </td></label><td><input name="s1" type="number"/></br>
+            </td></tr><tr><td><label>Basic Electrical Engineering: </td></label><td><input name="s2" type="number"/></br>
+            </td></tr><tr><td><label>Cultural Sociology: </td></label><td><input name="s3" type="number"/></br>
+            </td></tr><tr><td><label>Makerspace: </td></label><td><input name="s4" type="number"/></br>
+            </td></tr><tr><td><label>Calculus-I: </td></label><td><input name="s5" type="number"/></br>
+            </td></tr><tr><td><label>Calculus-II: </td></label><td><input name="s6" type="number"/></br>
+            </td></tr><tr><td><label>Language and Composition: </td></label><td><input name="s7" type="number"/></br>
+            </td></tr><tr><td><label>Computer Programming Lab: </td></label><td><input name="s8" type="number"/></br>
+            </td></tr><tr><td><label>Physics Lab: </td></label><td><input name="s9" type="number"/></br>
+        </table>
+        </div></br></br>
+        <button type="submit" class="btn">Register New Student</button>
+    </form>
+
+</body>
+</html>

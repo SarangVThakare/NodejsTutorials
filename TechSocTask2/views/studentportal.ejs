@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <head>
+        <style>
+            .heading{
+                text-align: left;
+                font-size: 30px;
+                color:#FFB22C;
+                font-weight: bold;
+            }
+            .rep{
+                text-align: center;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            .final{
+                font-size:22px;
+                font-weight:bold;
+                color:blue;
+                padding:5px;
+            }
+            #table{
+                font-size:18px;
+                font-weight:bold;
+                padding:2px;
+                border-radius:2px;
+            }
+        </style>
+    </head>
+</head>
+<body>
+    <p class="heading">Welcome <%= name%>,</p>
+    <p class="rep">Report Card:  </p></br></br>
+    <table id="table">
+        <tr><label><td>Computer Programming: </td><td><%= s1 %></td></label></tr></br>
+        <tr><label><td>Basic Electrical Engineering: </td><td><%= s2 %></label></tr></br>
+        <tr><label><td>Cultural Sociology: </td><td><%= s3 %></label></tr></br>
+        <tr><label><td>Makerspace: </td><td><%= s4 %></label></tr></br>
+        <tr><label><td>Calculus-I: </td><td><%= s5 %></label></tr></br>
+        <tr><label><td>Calculus-II: </td><td><%= s6 %></label></tr></br>
+        <tr><label><td>Language and Composition: </td><td><%= s7 %></label></tr></br>
+        <tr><label><td>Computer Programming Lab: </td><td><%= s8 %></label></tr></br>
+        <tr><label><td>Physics Lab: </td><td><%= s9 %></label></td></tr></br>
+    </table>
+    <p class="final">SPI [Semester Performance Index]:  <%= spi %></p>
+
+</body>
+</html>
